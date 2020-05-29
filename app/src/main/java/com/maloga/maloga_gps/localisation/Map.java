@@ -271,17 +271,6 @@ public class Map extends FragmentActivity implements OnMapReadyCallback {
                                             Log.e("ERREUR", e.toString());
                                         }
 
-                                        GetMeteo getMeteo = new GetMeteo(Map.this, userEndLocation);
-                                        getMeteo.execute();
-
-                                        try {
-                                            String meteo = getMeteo.get();
-                                            TextView text = findViewById(R.id.departText);
-                                            text.setText(meteo);
-                                        }catch (Exception e){
-                                            Log.e("ERREUR", e.toString());
-                                        }
-
 
                                         Runnable runnable2 = new Runnable() {
                                             @Override
@@ -289,7 +278,7 @@ public class Map extends FragmentActivity implements OnMapReadyCallback {
                                                 sauvegarde();
                                             }
                                         };
-                                        new Handler().postDelayed(runnable2, 1000000);
+                                        new Handler().postDelayed(runnable2, 1000);
 
                                     }
                                 };

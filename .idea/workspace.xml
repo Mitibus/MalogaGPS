@@ -192,8 +192,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/maloga/maloga_gps/localisation/Map.java</url>
-          <line>394</line>
-          <properties class="com.maloga.maloga_gps.localisation.Map" method="getEndLocation">
+          <line>383</line>
+          <properties>
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="3" />

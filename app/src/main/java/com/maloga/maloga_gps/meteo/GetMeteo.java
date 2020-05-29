@@ -16,14 +16,11 @@ import java.util.Hashtable;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
-<<<<<<< HEAD
-=======
 /**
  * Fait par Gaspard Couturier
  * 2020
  */
 
->>>>>>> feature/Louis
 public class GetMeteo extends AsyncTask<Void, Integer, String>{
 
     private Context context;

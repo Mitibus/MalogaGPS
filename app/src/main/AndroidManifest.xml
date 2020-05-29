@@ -16,15 +16,11 @@
         android:roundIcon="@mipmap/maloga_logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
-        <activity android:name=".meteo.Meteo"></activity>
-=======
         <activity android:name=".param.information_notification"></activity>
         <!--
          Toutes les activités de l'application sont décrites ci-dessous
          PS : L'application est vérrouillé en mode portrait sur chacunes des fenêtres
         -->
->>>>>>> feature/Louis
         <activity
             android:name=".volant.new_voiture"
             android:screenOrientation="portrait" />

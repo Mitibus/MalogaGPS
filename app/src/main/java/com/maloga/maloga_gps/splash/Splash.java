@@ -193,32 +193,6 @@ public class Splash extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
-<<<<<<< HEAD
-                try {
-                    for (int i = 1;i <= Integer.parseInt(value);i++) {
-                        numero_fenetre = i;
-                        distance = dataSnapshot.child(numero_fenetre.toString()).child("Distance").getValue().toString();
-                        temps = dataSnapshot.child(numero_fenetre.toString()).child("Temps").getValue().toString();
-                        trajetA = dataSnapshot.child(numero_fenetre.toString()).child("A").getValue().toString();
-                        trajetB = dataSnapshot.child(numero_fenetre.toString()).child("B").getValue().toString();
-                        nom_voiture = dataSnapshot.child(numero_fenetre.toString()).child("Voiture").getValue().toString();
-
-                        //sauvegarde locale
-                        SharedPreferences sharedPref = getSharedPreferences("DATA",Context.MODE_PRIVATE);
-                        SharedPreferences.Editor editor = sharedPref.edit();
-                        editor.putString("fenetre"+i+"_distance",distance);
-                        editor.putString("fenetre"+i+"_temps",temps);
-                        editor.putString("fenetre"+i+"_A",trajetA);
-                        editor.putString("fenetre"+i+"_B",trajetB);
-                        editor.putString("fenetre"+i+"_voiture",nom_voiture);
-                        editor.putString("vvvv","0");
-                        editor.commit();
-
-                        Log.d("DATAID", "Donée reçus pour i =  "+ i + " Distance : " + distance + " Temps : " + temps + "Trajets : " + trajetA + " ->" + trajetB
-                                + "  Nbr Voiture : " + nbr_voiture + " Nom Voiture : " + nom_voiture);
-                    }
-                }catch(Exception e){
-=======
                 for (int i = 1;i <= Integer.parseInt(value);i++) {
                     numero_fenetre = i;
                     try {
@@ -244,8 +218,9 @@ public class Splash extends AppCompatActivity {
                     editor.putString("fenetre"+i+"_meteo",meteo);
                     editor.putString("vvvv","0");
                     editor.commit();
->>>>>>> feature/Louis
 
+                    Log.d("DATAID", "Donée reçus pour i =  "+ i + " Distance : " + distance + " Temps : " + temps + "Trajets : " + trajetA + " ->" + trajetB
+                    + "  Nbr Voiture : " + nbr_voiture + " Nom Voiture : " + nom_voiture);
                 }
             }
 
